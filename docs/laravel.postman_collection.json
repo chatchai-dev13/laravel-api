@@ -1,0 +1,340 @@
+{
+	"info": {
+		"_postman_id": "6aaf8830-7631-4c2a-aa8c-b51e2b075710",
+		"name": "laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44449778"
+	},
+	"item": [
+		{
+			"name": "/blogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/blogs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/blogs/{slug}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/blogs/remote-work-trends-that-will-continue-in-2025",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blogs",
+						"remote-work-trends-that-will-continue-in-2025"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Test\",\r\n  \"email\": \"test@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test@gmail.com\",\r\n  \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQ2MzQ2NTY5LCJleHAiOjE3NDY0MzI5NjksIm5iZiI6MTc0NjM0NjU2OSwianRpIjoiTW1oaWRlcThZUnNyV0hRVSIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.hRF8ixFfqyxHHKxG8DtyCPvCDrUUHcrPhY8uQMAmLxg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/blogs",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQ2MzQ2NjU0LCJleHAiOjE3NDY0MzMwNTQsIm5iZiI6MTc0NjM0NjY1NCwianRpIjoiWEw2a2t4clE2NXlhME5STiIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-0UgXPvQTHYmrhZ6GsemcbTIjp5WisnV_2n3RGyeDwk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"The standard Lorem Ipsum passage, used since the 1500s\",\r\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\r\n    \"content\": \"<p>Test</p>\",\r\n    \"image\": \"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEBLAEsAAD/4QBWRXhpZgAATU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAAITAAMAAAABAAEAAAAAAAAAAAEsAAAAAQAAASwAAAAB/+0ALFBob3Rvc2hvcCAzLjAAOEJJTQQEAAAAAAAPHAFaAAMbJUccAQAAAgAEAP/hDIFodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvADw/eHBhY2tldCBiZWdpbj0n77u/JyBpZD0nVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkJz8+Cjx4OnhtcG1ldGEgeG1sbnM6eD0nYWRvYmU6bnM6bWV0YS8nIHg6eG1wdGs9J0ltYWdlOjpFeGlmVG9vbCAxMS44OCc+CjxyZGY6UkRGIHhtbG5zOnJkZj0naHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyc+CgogPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9JycKICB4bWxuczp0aWZmPSdodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyc+CiAgPHRpZmY6UmVzb2x1dGlvblVuaXQ+MjwvdGlmZjpSZXNvbHV0aW9uVW5pdD4KICA8dGlmZjpYUmVzb2x1dGlvbj4zMDAvMTwvdGlmZjpYUmVzb2x1dGlvbj4KICA8dGlmZjpZUmVzb2x1dGlvbj4zMDAvMTwvdGlmZjpZUmVzb2x1dGlvbj4KIDwvcmRmOkRlc2NyaXB0aW9uPgoKIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PScnCiAgeG1sbnM6eG1wTU09J2h0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8nPgogIDx4bXBNTTpEb2N1bWVudElEPmFkb2JlOmRvY2lkOnN0b2NrOmY1MzU5MDI3LTUzMmUtNGI0Ni1iZmI2LWFmN2I5N2U2Y2YxZjwveG1wTU06RG9jdW1lbnRJRD4KICA8eG1wTU06SW5zdGFuY2VJRD54bXAuaWlkOmRlZDgwNWJlLWVhMzAtNGE5Yi05YTcwLTIzZGM3OTgxMTI2NzwveG1wTU06SW5zdGFuY2VJRD4KIDwvcmRmOkRlc2NyaXB0aW9uPgo8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAo8P3hwYWNrZXQgZW5kPSd3Jz8+/9sAQwAFAwQEBAMFBAQEBQUFBgcMCAcHBwcPCwsJDBEPEhIRDxERExYcFxMUGhURERghGBodHR8fHxMXIiQiHiQcHh8e/9sAQwEFBQUHBgcOCAgOHhQRFB4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4e/8AAEQgBaAHCAwERAAIRAQMRAf/EABwAAQACAwEBAQAAAAAAAAAAAAAHCAQGCQEFAv/EAEMQAQABAgQBCAYHBgUEAwAAAAABAgMEBQYRBwgSGCExUVaUExYiMkGRFFJhcZXS0xUjM0KB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\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/blogs",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/blogs/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQ2MzQ2NjU0LCJleHAiOjE3NDY0MzMwNTQsIm5iZiI6MTc0NjM0NjY1NCwianRpIjoiWEw2a2t4clE2NXlhME5STiIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-0UgXPvQTHYmrhZ6GsemcbTIjp5WisnV_2n3RGyeDwk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"The standard Lorem Ipsum passage, used since the 1500s\",\r\n    \"description\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\r\n    \"content\": \"<p>Test</p>\",\r\n    \"image\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/blogs/23",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blogs",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/blogs/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQ2MzQ2NjU0LCJleHAiOjE3NDY0MzMwNTQsIm5iZiI6MTc0NjM0NjY1NCwianRpIjoiWEw2a2t4clE2NXlhME5STiIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-0UgXPvQTHYmrhZ6GsemcbTIjp5WisnV_2n3RGyeDwk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/blogs/23",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"blogs",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/upload",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzQ2MzQ2NjU0LCJleHAiOjE3NDY0MzMwNTQsIm5iZiI6MTc0NjM0NjY1NCwianRpIjoiWEw2a2t4clE2NXlhME5STiIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.-0UgXPvQTHYmrhZ6GsemcbTIjp5WisnV_2n3RGyeDwk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/syste/OneDrive/รูปภาพ/ม้วนฟิล์ม/360_F_380665853_CziX9VoIqusRIJE0IDmA5WNwWfUAYx9b.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/upload",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
