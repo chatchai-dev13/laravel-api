@@ -22,6 +22,7 @@
 - Import DB ที่อยู่ในโฟลเดอร์ database ชื่อ db_blogs เข้าไปใน DB ที่สร้างเอาไว้
 
 - composer install
+- php artisan storage:link
 - npm install
 - php artisan serve
 ```
